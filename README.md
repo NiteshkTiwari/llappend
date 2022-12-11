@@ -86,22 +86,12 @@ Node* append(Node* head,int pos)
     return h2;
 
 }
-int length(Node* head)
-{
-    Node* temp=head;
-    int len=0;
-    while(temp!=NULL)
-    {
-        len++;
-        temp=temp->next;
-    }
-    return len;
-}
+
 
 int main()
 {
     Node* head=insert();
    head=append(head,3);
-   //cout<<length(head)<<endl;
+   
     print(head);
 }
